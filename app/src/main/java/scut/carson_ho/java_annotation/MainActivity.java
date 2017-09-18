@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Annotation";
+    private static final String TAG = "annotation";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "id:" + classAnnotation.id());
             Log.d(TAG, "msg:" + classAnnotation.msg());
         }
-
 
         /**
          * 讲解2：获取类成员变量a上的注解
@@ -73,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // 3. 获取注解的值（通过循环）
                 for( int i = 0;i < ans.length  ;i++) {
-
 
                     Log.d(TAG, "类方法bMethod的" + "注解"+ i+ ans[i].annotationType().getSimpleName());
                 }
